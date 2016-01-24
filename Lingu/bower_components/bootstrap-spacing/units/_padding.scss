@@ -1,0 +1,34 @@
+
+@mixin padding-generator($sizeLabel, $px) {
+	.padding-#{$sizeLabel} {
+		padding: $px;
+	}
+	.padding-#{$sizeLabel}-left {
+		padding-left: $px;
+	}
+	.padding-#{$sizeLabel}-right {
+		padding-right: $px;
+	}
+	.padding-#{$sizeLabel}-top {
+		padding-top: $px;
+	}
+	.padding-#{$sizeLabel}-bottom {
+		padding-bottom: $px;
+	}
+}
+
+@include padding-generator('xs', $xs);
+@include padding-generator('sm', $sm);
+@include padding-generator('md', $md);
+@include padding-generator('lg', $lg);
+@include padding-generator('xl', $xl);
+@include padding-generator('off', 0 !important);
+
+@media screen and (max-width: 768px) {
+	@include padding-generator('xs', 2px);
+	@include padding-generator('sm', 5px);
+	@include padding-generator('md', 10px);
+	@include padding-generator('lg', 15px);
+	@include padding-generator('xl', 20px);
+	@include padding-generator('off', 0 !important);
+}

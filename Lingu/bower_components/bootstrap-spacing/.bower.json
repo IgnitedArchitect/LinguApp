@@ -1,0 +1,33 @@
+{
+  "name": "bootstrap-spacing",
+  "main": "./bootstrap-spacing.css",
+  "authors": [
+    "Corbin",
+    "Brandon <bcorbin@fusionalliance.com>"
+  ],
+  "description": "Tiny set of classes to help with spacing, margins and borders in bootstrap",
+  "keywords": [
+    "bootstrap",
+    "spacing",
+    "margin",
+    "padding"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/brandoncorbin/bootstrap-spacing",
+  "_release": "8b3d0405e4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "8b3d0405e4727a8d135c9d533c28ce00ee87d36d"
+  },
+  "_source": "https://github.com/brandoncorbin/bootstrap-spacing.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/brandoncorbin/bootstrap-spacing.git"
+}

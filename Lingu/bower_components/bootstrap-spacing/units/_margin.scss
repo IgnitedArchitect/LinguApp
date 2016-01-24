@@ -1,0 +1,34 @@
+
+@mixin margin-generator($sizeLabel, $px) {
+	.margin-#{$sizeLabel} {
+		margin: $px;
+	}
+	.margin-#{$sizeLabel}-left {
+		margin-left: $px;
+	}
+	.margin-#{$sizeLabel}-right {
+		margin-right: $px;
+	}
+	.margin-#{$sizeLabel}-top {
+		margin-top: $px;
+	}
+	.margin-#{$sizeLabel}-bottom {
+		margin-bottom: $px;
+	}
+}
+
+@include margin-generator('xs', $xs);
+@include margin-generator('sm', $sm);
+@include margin-generator('md', $md);
+@include margin-generator('lg', $lg);
+@include margin-generator('xl', $xl);
+@include margin-generator('off', 0 !important);
+
+@media screen and (max-width: 768px) {
+	@include margin-generator('xs', 2px);
+	@include margin-generator('sm', 5px);
+	@include margin-generator('md', 10px);
+	@include margin-generator('lg', 15px);
+	@include margin-generator('xl', 20px);
+	@include margin-generator('off', 0 !important);
+}
