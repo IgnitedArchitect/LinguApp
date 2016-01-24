@@ -1,0 +1,2 @@
+# LinguApp
+Linguistic App
